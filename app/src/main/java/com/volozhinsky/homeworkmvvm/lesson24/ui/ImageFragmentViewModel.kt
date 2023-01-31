@@ -6,8 +6,10 @@ import androidx.lifecycle.ViewModel
 import com.volozhinsky.homeworkmvvm.lesson24.domain.Lesson24Repository
 import com.volozhinsky.homeworkmvvm.lesson24.ui.mappers.ImageInfoUiMapper
 import com.volozhinsky.homeworkmvvm.lesson24.ui.models.ImageInfoUI
+import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
+@HiltViewModel
 class ImageFragmentViewModel @Inject constructor(
     private val repository: Lesson24Repository,
     private val uiMapper: ImageInfoUiMapper
