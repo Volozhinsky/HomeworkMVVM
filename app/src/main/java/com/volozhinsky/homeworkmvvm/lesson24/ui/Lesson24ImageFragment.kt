@@ -9,7 +9,9 @@ import android.widget.ImageView
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.volozhinsky.homeworkmvvm.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class Lesson24ImageFragment : Fragment() {
 
     private val vm by viewModels<ImageFragmentViewModel>()
