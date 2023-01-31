@@ -29,6 +29,7 @@ class Lesson24ImageFragment : Fragment() {
             val ivMainLesson24 =  view.findViewById<ImageView>(R.id.ivMainLesson24)
             Glide.with(this.requireContext()).load(it.link).into(ivMainLesson24)
         }
+        vm.getImageInfo()
     }
 
     companion object {
